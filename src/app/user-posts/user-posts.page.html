@@ -1,0 +1,54 @@
+<ion-header class="ion-no-border">
+
+    <ion-toolbar>
+        <ion-buttons *ngIf="back" slot="start">
+            <ion-button>
+                <ion-back-button></ion-back-button>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>{{userName}}</ion-title>
+        <ion-img class="messenger-logo" slot="end" src="/assets/imgs/instagram-messenger.png"></ion-img>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item (click)="showUserProfile(item)" lines="none" class="">
+        <ion-avatar class="ion-margin-end">
+            <ion-img [src]="user?.picture"></ion-img>
+        </ion-avatar>
+        <ion-label class="ion-text-wrap">
+            <h2>{{user?.username}}</h2>            
+        </ion-label>
+        <!-- <ion-button size="small" fill="clear" color="dark">
+            <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+        </ion-button> -->
+    </ion-item>
+    <ion-item>
+        <ion-label class="ion-text-wrap">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
+        </ion-label>
+    </ion-item>
+    
+
+    <ion-grid class="ion-no-margin">
+        <ion-row class="ion-no-margin">
+            <ion-col size="4" *ngFor="let item of plist" class="ion-no-margin">
+                <ion-card class="ion-no-margin" style="border-radius: unset;">
+                    <img src="https://picsum.photos/700/550?cache=none" style="border: 1px solid lightgray" />
+                </ion-card>
+                
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+<!-- 
+
+
+    <ion-list>
+        <app-fbpost *ngFor="let item of plist" [item]="item" (userposts)="showUserPosts($event)"></app-fbpost>
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="loadMore($event)">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll> -->
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-card >
+    <ion-item (click)="showUserProfile(item)">
+        <ion-avatar class="ion-margin-end">
+            <ion-img [src]="user?.picture"></ion-img>
+        </ion-avatar>
+        <ion-label>
+            <small>{{user?.username}}</small>
+        </ion-label>
+        <ion-button size="small" fill="clear" color="dark">
+            <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+          </ion-button>
+    </ion-item>
+    <ion-card-header (click)="showSinglePost(item)">
+        <ion-img src="https://picsum.photos/700/550?cache=none"></ion-img>
+    </ion-card-header>
+
+    <ion-card-content >
+        <ion-grid>
+            <ion-row (click)="showSinglePost(item)">
+                <ion-col size="12">
+                    {{item.body}}
+                </ion-col>
+            </ion-row>
+            
+
+        </ion-grid>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-button size="small" fill="clear" color="secondary" expand="block">
+                    <ion-icon slot="start" name="heart-outline"></ion-icon>
+                </ion-button>
+                <ion-button (click)=" showComments(item)" size="small" fill="clear" color="secondary" expand="block">
+                    <ion-icon slot="start" name="chatbubble-outline"></ion-icon>
+                </ion-button>
+                <ion-button size="small" fill="clear" color="secondary" (click)="presentActionSheet()" expand="block">
+                    <ion-icon slot="start" name="send-outline" ></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button slot="end" size="small" fill="clear" color="dark">
+                    <ion-icon slot="end" name="bookmark-outline"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+
+    </ion-card-content>
+</ion-card>

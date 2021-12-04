@@ -1,0 +1,16 @@
+.center-dflex-white {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    /* margin: 0 auto; */
+    /* margin: 0 auto; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    // color: #fff;
+}
+
+.center-dflex-white ion-img {
+    width: 100px;
+    margin: 0 auto;
+}

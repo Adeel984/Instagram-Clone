@@ -1,0 +1,21 @@
+<ion-header class="ion-no-border">
+
+    <ion-toolbar>
+        <ion-buttons *ngIf="back" slot="start">
+            <ion-button>
+                <ion-back-button></ion-back-button>
+            </ion-button>
+        </ion-buttons>
+        <ion-img class="insta-logo" slot="start" src="/assets/imgs/Instagram_text_logo.png"></ion-img>
+        <ion-img class="messenger-logo" slot="end" src="/assets/imgs/instagram-messenger.png"></ion-img>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <app-fbpost *ngFor="let item of plist" [item]="item" (userposts)="showUserPosts($event)"></app-fbpost>
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="loadMore($event)">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>

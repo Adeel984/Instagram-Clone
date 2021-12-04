@@ -1,0 +1,86 @@
+{
+  "items": [
+    {
+      "name": "Community ABC, TX 33310",
+      "children": [
+        {
+          "name": "Adam N. Mathew",
+          "community": "COMMUNITY GHI, AL 10304",
+          "img": "assets/imgs/list.jpg"
+        },
+        {
+          "name": "Adam N. Mathew",
+          "community": "COMMUNITY GHI, AL 10304",
+          "img": "assets/imgs/list.jpg"
+        },
+        {
+          "name": "Adam N. Mathew",
+          "community": "COMMUNITY GHI, AL 10304",
+          "img": "assets/imgs/list.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Community ABC, TX 33310",
+      "children": [
+        {
+          "name": "Adam N. Mathew",
+          "community": "COMMUNITY GHI, AL 10304",
+          "img": "assets/imgs/list.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Community ABC, TX 33310",
+      "children": [
+        {
+          "name": "Adam N. Mathew",
+          "community": "COMMUNITY GHI, AL 10304",
+          "img": "assets/imgs/list.jpg"
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "name": "Group 1",
+      "children": [
+        {
+          "name": "Adam N. Mathew",
+          "community": "COMMUNITY GHI, AL 10304",
+          "img": "assets/imgs/list.jpg"
+        },
+        {
+          "name": "Adam N. Mathew",
+          "community": "COMMUNITY GHI, AL 10304",
+          "img": "assets/imgs/list.jpg"
+        },
+        {
+          "name": "Adam N. Mathew",
+          "community": "COMMUNITY GHI, AL 10304",
+          "img": "assets/imgs/list.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Group 2",
+      "children": [
+        {
+          "name": "Adam N. Mathew",
+          "community": "COMMUNITY GHI, AL 10304",
+          "img": "assets/imgs/list.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Group 3",
+      "children": [
+        {
+          "name": "Adam N. Mathew",
+          "community": "COMMUNITY GHI, AL 10304",
+          "img": "assets/imgs/list.jpg"
+        }
+      ]
+    }
+  ]
+}

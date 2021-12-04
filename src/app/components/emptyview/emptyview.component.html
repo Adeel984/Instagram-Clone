@@ -1,0 +1,5 @@
+<div class="center-dflex-white">
+  <ion-icon *ngIf="type == 'icon'" [name]="icon" ></ion-icon>
+  <ion-img *ngIf="type == 'image'" [src]="icon"></ion-img>
+  <h2 [innerHTML]="message"></h2>
+</div>

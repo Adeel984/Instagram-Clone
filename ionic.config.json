@@ -1,0 +1,8 @@
+{
+  "name": "instagramv2",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}
